@@ -1,0 +1,25 @@
+@import '../../scss/main.scss';
+
+
+.footer {
+    background-color: black;
+    color: white;
+    margin: 0 -6rem;
+    padding: 2rem;
+    text-align: center;   
+    font-size: x-large;
+
+    &__logo {
+        padding: 2rem;
+        @include mobile-only {
+            padding: 1rem;
+        }
+    }
+
+    @include mobile-only {
+        font-size: small;
+        font-weight: 300;
+        padding: 2rem 3rem 3rem 3rem;
+
+    }
+}
