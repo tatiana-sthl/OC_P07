@@ -12,12 +12,12 @@ export default function Header() {
                 </div>
             </NavLink>
             <NavLink to="/">
-                <div className='navbar__link'>
+                <div>
                     <p>Accueil</p>                
                 </div>
             </NavLink>
             <NavLink to="/about">
-                <div className='navbar__link'>
+                <div>
                     <p>A propos</p>                
                 </div>
             </NavLink>
