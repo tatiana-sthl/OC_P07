@@ -1,0 +1,32 @@
+@import '../../scss/main.scss';
+
+
+.banner {
+    height: 13rem;
+    margin: 3rem 0 3rem 0;
+    position: relative;
+
+    &__img {
+        border-radius: 25px;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        filter: brightness(0.7);
+    }
+
+    &__txt {
+        position: absolute;
+        top: 40%;
+        left:30%; // à rendre responsive
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 100%;
+        color: $tertiary-color;
+
+        @include mobile-only {
+            margin: 0 2rem 0 2rem;
+            top: 30%;
+            left: 0;
+        }
+    }
+}
