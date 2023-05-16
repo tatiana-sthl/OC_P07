@@ -34,7 +34,7 @@
         font-weight: 500;
         font-size: 18px;
         text-decoration-line: underline;
-        align-items: end;
+        align-items: flex-end;
         align-self: center;
 
         @include mobile-only {
