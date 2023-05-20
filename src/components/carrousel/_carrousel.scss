@@ -2,31 +2,38 @@
 
 .carrousel{
     position: relative;
-    display: flex;
     width: 100%;
-    height: 415px;
-    border-radius: 25px;
-    background-position: center;
-    background-size: cover;
-    width: 95%;
-    margin: 43px auto;
+    margin-top: 1rem;
+
+    &__img {
+        width: 100%;
+        height: 35rem;
+        object-fit: cover;
+        border-radius: 25px;
+    }
     
     &__arrowLeft{
         position: absolute;
-        top: 50%;
+        top: 43%;
         height: 15%;
-        transform: translateY(-50%);
         cursor: pointer;
         left: 25px;
+
+        @include mobile-only {
+            height: 40px;
+        }
     }
 
     &__arrowRight{
         position: absolute;
-        top: 50%;
+        top: 43%;
         height: 15%;
-        transform: translateY(-50%);
         cursor: pointer;
         right: 25px;
+
+        @include mobile-only {
+            height: 40px;
+        }
     }
 
     &__number{
@@ -34,7 +41,7 @@
         bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
-        color: $primary-color;
+        color: $tertiary-color;
         font-weight: 500;
         font-size: clamp(14px, 2vw, 18px);
     }
