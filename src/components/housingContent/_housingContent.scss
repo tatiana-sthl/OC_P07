@@ -1,0 +1,96 @@
+@import '../../scss/main.scss';
+
+.housing {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    @include mobile-only {
+        display: block;
+    }
+
+    &__infos {
+        color: $primary-color;
+
+        &__h1 {
+            font-weight: 500;
+            margin: 2rem 0 0.2rem 0;
+        }
+
+        &__buttons {
+            margin: 2rem 1rem 0 0;
+            padding: 0.3rem 2rem;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+
+    &__infos2 {
+        @include mobile-only {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+    }
+
+    &__host {
+        display: flex;
+        justify-content: right;
+
+        &__p {
+            color: $primary-color;
+            width: 35%;
+            text-align: right;
+            align-self: center;
+            font-size:large;
+            font-weight: 500;
+            line-height: 170%;
+        }
+
+        &__img {
+            border-radius: 65px;
+            width: 25%;
+            margin: 1rem 0 1rem 1rem;
+        }
+    }
+
+    &__rate {
+        text-align: right;
+
+        @include mobile-only {
+            text-align: left;
+            align-self: center;
+        }
+        
+        &__star {
+            width: 8%;
+            margin-left: 1.2rem;
+
+            @include mobile-only {
+                margin-left: 0;
+                margin-right: 1.2rem;
+            }
+        }
+    }
+}
+
+
+.housing__collapse {
+    display: flex;
+
+    @include mobile-only {
+        display: block;
+    }
+
+    &__description {
+        flex: 1;
+    }
+
+    &__equipments {
+        flex: 1;
+    }
+}
+
