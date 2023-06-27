@@ -87,10 +87,33 @@
 
     &__description {
         flex: 1;
+        margin-right: 1rem;
+
+        @include mobile-only {
+            margin: 0;
+        }
     }
 
     &__equipments {
         flex: 1;
+        margin-left: 1rem;
+
+        @include mobile-only {
+            margin: 0;
+        }
+    }
+
+    .collapse {
+        max-width: 100%;
+        margin: 0;
+
+        &__title {
+            margin: 0;
+        }
+
+        &__content {
+            margin: 0;
+        }
     }
 }
 
