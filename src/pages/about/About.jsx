@@ -5,7 +5,7 @@ import Collapse from '../../components/collapse/Collapse';
 import datas from '../../data/collapses.json';
 
 
-export default function Home() {
+export default function About() {
     return (
         <div>
             <Header />
