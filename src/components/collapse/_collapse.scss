@@ -4,6 +4,11 @@
     max-width: 85%;
     margin: 0 auto;
 
+    @include mobile-only {
+        max-width: 100%;
+        margin: 0;
+    }
+
     &__title{
         border-radius: 5px;
         background-color: $primary-color;

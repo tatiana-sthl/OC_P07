@@ -5,9 +5,6 @@ import { useState } from 'react'
 
 
 export default function Slide({ imageSlide }) {
-
-    // Creation of a state variable currentIndex which represents the index of the image currently displayed in the carrousel
-    // and a function that updates the variable 
     const [currentIndex, setCurrentIndex] = useState(0) 
 
     const nextSlide = () => {
