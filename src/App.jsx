@@ -5,17 +5,20 @@ import Home from './pages/home/Home';
 import Error from './pages/error/Error';
 import Housing from './pages/housing/Housing';
 
-function App() {
+export default function App() {
   return (
+    // Définit le contexte des routes.
     <Router>
+      {/* Contient les différentes routes de l'application */}
       <Routes>
+      {/* Définit une route spécifique */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/housing/:id" element={<Housing />} />
-        <Route path="*" element={<Error />} />
+        {/* Toutes les autres URL qui ne correspondent pas aux routes précédentes affichent le composant Error */}
+        <Route path="*" element={<Error />} /> 
       </Routes>
     </Router>
   );
 }
 
-export default App;

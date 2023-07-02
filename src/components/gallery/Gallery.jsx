@@ -9,11 +9,12 @@ export default function Gallery() {
             {datas.map(data => {
                 return (
                     <Card
-                        key={ data.id } //pourquoi key ?
+                        key={ data.id } // Propriété "key" utilisée pour l'identification unique de chaque élément dans le rendu de la liste
                         id={ data.id }
                         title={ data.title }
                         cover={ data.cover }
                     />
+                    /* Pour chaque donnée de logement, on crée un élément Card avec des propriétés spécifiques */
                 )
             })}
         </div>
