@@ -13,6 +13,7 @@ export default function App() {
       <Routes>
       {/* Définit une route spécifique */}
         <Route path="/" element={<Home />} />
+        <Route path="/OC_P07/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/housing/:id" element={<Housing />} />
         {/* Toutes les autres URL qui ne correspondent pas aux routes précédentes affichent le composant Error */}
